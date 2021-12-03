@@ -16,4 +16,4 @@ jobs:
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@dont-use-script
         with:
-          inputs: 'test nixpkgs'
+          inputs: 'test test2'

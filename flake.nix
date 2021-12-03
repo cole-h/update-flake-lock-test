@@ -2,8 +2,9 @@
   description = "test";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     test.url = "github:nixos/nix";
+    test2.url = "github:nixos/patchelf";
   };
 
   outputs =
