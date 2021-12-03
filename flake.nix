@@ -3,8 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    test.url = "github:nixos/nix/69b919887550483925b5a30388c13a63dabcca1a";
-    test2.url = "github:nixos/patchelf/55c0b4f909815aa8d2bd93f535c34f9f60813c0e";
+    test.url = "github:nixos/nix";
+    test2.url = "github:nixos/patchelf";
   };
 
   outputs =
