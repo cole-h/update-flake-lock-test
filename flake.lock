@@ -85,7 +85,6 @@
       "original": {
         "owner": "nixos",
         "repo": "nix",
-        "rev": "69b919887550483925b5a30388c13a63dabcca1a",
         "type": "github"
       }
     },
@@ -104,7 +103,6 @@
       "original": {
         "owner": "nixos",
         "repo": "patchelf",
-        "rev": "55c0b4f909815aa8d2bd93f535c34f9f60813c0e",
         "type": "github"
       }
     }
