@@ -19,8 +19,4 @@ jobs:
         uses: DeterminateSystems/update-flake-lock@36f1c474807d62363305dcec6fd9ea9ed642c114
         with:
           inputs: 'test2'
-          git-author-name: 'test friend'
-          git-author-email: 'cole.e.helbling@outlook.com'
-          git-committer-name: 'another test friend'
-          git-committer-email: 'cole.e.helbling@outlook.com'
       - run: echo ${{ steps.update.outputs.pull-request-number }}
