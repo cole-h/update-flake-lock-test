@@ -16,7 +16,11 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Update flake.lock
         id: update
-        uses: DeterminateSystems/update-flake-lock@250b6ef5202d01e1a52c58398ad0fb40726bf831
+        uses: DeterminateSystems/update-flake-lock@36f1c474807d62363305dcec6fd9ea9ed642c114
         with:
           inputs: 'test2'
+          git-author-name: 'test friend'
+          git-author-email: 'cole.e.helbling@outlook.com'
+          git-committer-name: 'another test friend'
+          git-committer-email: 'cole.e.helbling@outlook.com'
       - run: echo ${{ steps.update.outputs.pull-request-number }}
