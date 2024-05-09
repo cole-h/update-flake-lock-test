@@ -21,4 +21,6 @@ jobs:
           git-author-email: 'github-actions[bot]@users.noreply.github.com'
           git-committer-name: 'Cole Helbling'
           git-committer-email: 'cole.e.helbling@outlook.com'
+          pr-assignees: cole-h
+          pr-reviewers: cole-h
       - run: echo ${{ steps.update.outputs.pull-request-number }}
