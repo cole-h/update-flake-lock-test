@@ -19,5 +19,5 @@ jobs:
         uses: DeterminateSystems/update-flake-lock@a2bbbde80bf98fc43e13bbe17ee07a082c46c0cd
         with:
           inputs: 'test2'
-          nix-options: --debug --log-format raw
+          nix-options: '--debug --log-format raw'
       - run: echo ${{ steps.update.outputs.pull-request-number }}
