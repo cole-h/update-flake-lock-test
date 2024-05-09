@@ -16,7 +16,7 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Update flake.lock
         id: update
-        uses: DeterminateSystems/update-flake-lock@main
+        uses: DeterminateSystems/update-flake-lock@a2bbbde80bf98fc43e13bbe17ee07a082c46c0cd
         with:
           inputs: 'test2'
       - run: echo ${{ steps.update.outputs.pull-request-number }}
