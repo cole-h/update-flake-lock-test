@@ -13,14 +13,14 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
       - name: Update flake.lock
         id: update
-        uses: DeterminateSystems/update-flake-lock@detsys-ts
+        uses: DeterminateSystems/update-flake-lock@main
         with:
           inputs: 'test2'
           nix-options: '--debug --log-format raw'
-          git-author-name: 'Jane Author'
-          git-author-email: 'github-actions[bot]@users.noreply.github.com'
-          git-committer-name: 'Cole Helbling'
-          git-committer-email: 'cole.e.helbling@outlook.com'
-          pr-assignees: cole-h
-          pr-reviewers: cole-h
+          # git-author-name: 'Jane Author'
+          # git-author-email: 'github-actions[bot]@users.noreply.github.com'
+          # git-committer-name: 'Cole Helbling'
+          # git-committer-email: 'cole.e.helbling@outlook.com'
+          # pr-assignees: cole-h
+          # pr-reviewers: cole-h
       - run: echo ${{ steps.update.outputs.pull-request-number }}
