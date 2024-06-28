@@ -17,6 +17,7 @@ jobs:
         with:
           inputs: 'test2'
           nix-options: '--debug --log-format raw'
+          commit-msg: "hi there"
           # git-author-name: 'Jane Author'
           # git-author-email: 'github-actions[bot]@users.noreply.github.com'
           # git-committer-name: 'Cole Helbling'
