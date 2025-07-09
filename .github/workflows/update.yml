@@ -13,11 +13,12 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
       - name: Update flake.lock
         id: update
-        uses: DeterminateSystems/update-flake-lock@fixup-aliased-options
+        uses: DeterminateSystems/update-flake-lock@35c3dd6617d4738d758de23cc61ed42edebf5c43
         with:
           inputs: 'test2'
           nix-options: '--debug --log-format raw'
           commit-msg: "hi there"
+          signoff: true
           # git-author-name: 'Jane Author'
           # git-author-email: 'github-actions[bot]@users.noreply.github.com'
           # git-committer-name: 'Cole Helbling'
