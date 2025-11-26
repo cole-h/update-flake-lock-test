@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v5
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
       - name: Update flake.lock
         id: update
-        uses: DeterminateSystems/update-flake-lock@e637603d31bed83169f2e56bb475c9dff7af6544
+        uses: DeterminateSystems/update-flake-lock@main
         with:
           inputs: 'test2'
           nix-options: '--debug --log-format raw'
