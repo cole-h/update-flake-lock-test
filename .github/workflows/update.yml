@@ -13,7 +13,7 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
       - name: Update flake.lock
         id: update
-        uses: DeterminateSystems/update-flake-lock@main
+        uses: DeterminateSystems/update-flake-lock@e637603d31bed83169f2e56bb475c9dff7af6544
         with:
           inputs: 'test2'
           nix-options: '--debug --log-format raw'
